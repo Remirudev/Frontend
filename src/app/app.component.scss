@@ -1,0 +1,73 @@
+nav {
+  background-color: #0f172a; // bg-slate-900
+  margin-left: 2.5rem; // ml-10
+  margin-right: 2.5rem; // mr-10
+  border: 1px solid #d946ef; // border-fuchsia-600
+  border-radius: 9999px; // rounded-full
+  color: white;
+
+  .nav-container {
+    height: 10vh; // h-10vh
+    display: flex; // flex
+    justify-content: space-between; // justify-between
+    z-index: 50; // z-50
+    padding-top: 1.25rem; // lg:py-5
+    padding-bottom: 1.25rem; // lg:py-5
+    padding-left: 5rem; // px-20
+    padding-right: 5rem; // px-20
+    padding-top: 1rem; // py-4
+    padding-bottom: 1rem; // py-4
+
+    .brand {
+      display: flex; // flex
+      align-items: center; // items-center
+      flex: 1; // flex-1
+
+      span {
+        font-size: 1.875rem; // text-3xl
+        font-weight: 700; // font-bold
+      }
+    }
+
+    .menu {
+      display: flex; // flex
+      flex: 1; // flex-1
+      align-items: center; // items-center
+      justify-content: flex-end; // justify-end
+      font-weight: 500; // font-medium
+      display: none; // hidden
+
+      @media (min-width: 768px) {
+        // md:flex
+        display: flex;
+      }
+
+      @media (min-width: 1024px) {
+        // lg:flex
+        display: flex;
+      }
+
+      ul {
+        list-style-type: none; // Add this line to remove the list bullet points
+        display: flex; // flex
+        flex-direction: row; // flex-row
+        gap: 2rem; // gap-8
+        margin-right: 4rem; // mr-16
+        font-weight: 500; // font-medium
+        font-size: 1.125rem; // text-[18px]
+
+        li {
+          transition: color 0.3s, border-color 0.3s; // transition
+          border-bottom: 2px solid #0f172a; // border-b-2 border-slate-900
+          cursor: pointer; // cursor-pointer
+          color: white;
+
+          &:hover {
+            color: #d946ef; // hover:text-fuchsia-600
+            border-color: #d946ef; // hover:border-fuchsia-600
+          }
+        }
+      }
+    }
+  }
+}
