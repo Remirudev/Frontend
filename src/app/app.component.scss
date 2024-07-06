@@ -10,7 +10,6 @@ nav {
     height: 10vh; // h-10vh
     display: flex; // flex
     justify-content: space-between; // justify-between
-    z-index: 50; // z-50
     padding-top: 1.25rem; // lg:py-5
     padding-bottom: 1.25rem; // lg:py-5
     padding-left: 5rem; // px-20
@@ -52,7 +51,7 @@ nav {
         display: flex; // flex
         flex-direction: row; // flex-row
         gap: 2rem; // gap-8
-        margin-right: 4rem; // mr-16
+
         font-weight: 500; // font-medium
         font-size: 1.125rem; // text-[18px]
 

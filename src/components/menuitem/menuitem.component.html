@@ -1,1 +1,21 @@
-<p>menuitem works!</p>
+<div>
+  @for (menuitem of menuitems; track menuitem) {
+  <p-card header="{{ menuitem.name }}" [style]="{ width: '250px' }">
+    <ng-template pTemplate="header">
+      <img src="{{ menuitem.menuitemimg }}" />
+    </ng-template>
+    <p>{{ menuitem.description }} item.</p>
+    <ng-template pTemplate="footer">
+      <div class="AddAndRemove">
+        <p-button
+          label="Remove"
+          severity="danger"
+          class="w-full"
+          styleClass="w-full"
+        />
+        <p-button label="Add" (onClick)="postOrder(order)" />
+      </div>
+    </ng-template>
+  </p-card>
+  }
+</div>

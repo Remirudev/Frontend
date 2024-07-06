@@ -1,3 +1,17 @@
 <div class="main-div">
-  <h1>Hello orders!</h1>
+  @for (table of restaurantTables; track table) {
+  <p-button class="pbutton" (onClick)="showDialog()">
+    <img src="{{ stoolImg }}" class="chair-button" />
+    <p-image src="{{ table.tableimage }}" class="table-button" />
+  </p-button>
+  <p-dialog
+    header="Edit Profile"
+    [modal]="true"
+    [(visible)]="visible"
+    [baseZIndex]="10000"
+    [style]="{ width: '95vw', height: '95vh' }"
+  >
+    <app-menuitem />
+  </p-dialog>
+  }
 </div>

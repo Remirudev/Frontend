@@ -1,4 +1,30 @@
 .main-div {
-  padding-top: 100px;
-  background-color: aqua;
+  background-color: slategray;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pDialog {
+  width: 90vw;
+  height: 90vh;
+}
+
+.pButton {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.table-button {
+  width: 200px;
+  height: 100px;
+}
+
+.chair-button {
+  width: 80px;
+  height: 80px;
 }

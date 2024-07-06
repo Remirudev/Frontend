@@ -1,5 +1,10 @@
 import { ApplicationConfig } from '@angular/core';
 import { RouterOutlet, provideRouter } from '@angular/router';
+import { PrimeNGConfig } from 'primeng/api';
+import {
+  BrowserAnimationsModule,
+  provideAnimations,
+} from '@angular/platform-browser/animations';
 
 import { routes } from './app.routes';
 import {
@@ -8,6 +13,7 @@ import {
 } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 import { ButtonModule } from 'primeng/button';
+import { provideStore } from '@ngrx/store';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -17,5 +23,8 @@ export const appConfig: ApplicationConfig = {
     BrowserModule,
     ButtonModule,
     RouterOutlet,
-  ],
+    PrimeNGConfig,
+    provideAnimations(),
+    provideStore()
+],
 };
