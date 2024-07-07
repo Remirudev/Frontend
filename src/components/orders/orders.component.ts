@@ -1,16 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 import { ApiCallsService } from '../../Service/api-calls.service';
 import { Menuitem } from '../../Entity/Menuitem';
 import { RestaurantTable } from '../../Entity/RestaurantTable';
-import { ImageModule } from 'primeng/image';
-import { DialogModule } from 'primeng/dialog';
-import { MenuitemComponent } from '../menuitem/menuitem.component';
-
 @Component({
   selector: 'app-orders',
-  standalone: true,
-  imports: [ButtonModule, ImageModule, DialogModule, MenuitemComponent],
   templateUrl: './orders.component.html',
   styleUrl: './orders.component.scss',
 })
